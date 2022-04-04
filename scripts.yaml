@@ -1,0 +1,34 @@
+scripts:
+  dev:
+    desc: Runs deno server in dev mode with denon
+    cmd: 
+      - vr lint
+      - vr fmt
+      - server.ts
+    allow:
+      read: true
+      write: true
+      net: true
+      # unstable: true
+    envFile:
+      - .env.dev
+    watch: true
+
+  prod:
+    desc: Runs the server
+    cmd: server.ts
+    allow:
+      read: true
+      write: true
+      net: true
+      # unstable: true
+    envFile:
+      - .env.prod
+
+  lint: deno lint
+  format: deno fmt
+  pre-commit:
+    cmd:
+      - vr lint
+      - vr format
+    gitHook: pre-commit
