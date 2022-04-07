@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/styles.css">
-    <title>Deno ABC Server Index</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <title>Deno Web</title>
   </head>
   <body>
     <h1>Deno says hi!</h1>
     <h3>This page was made using deno and ABC server framework.</h3>
     <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-      doloremque veritatis, maxime perferendis a vel nam quibusdam asperiores
-      voluptatibus aliquam qui harum velit omnis! Nostrum quasi vitae atque illo
-      delectus!
+      Hey wassup! here's a simple deno based application, click on the button
+      below to load a random joke over the internet from an <a>API</a> over
+      click the other button for the crud operations
     </p>
+    <div class="buttons">
+      <button onclick="window.location.href='/jokes/random'">
+        Get a random joke
+      </button>
+      <button onclick="window.location.href='/crud/'">CRUD operations</button>
+    </div>
   </body>
 </html>

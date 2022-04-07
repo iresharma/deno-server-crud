@@ -9,6 +9,7 @@ scripts:
       read: true
       write: true
       net: true
+      env: true
       # unstable: true
     envFile:
       - .env.dev
@@ -21,6 +22,7 @@ scripts:
       read: true
       write: true
       net: true
+      env: true
       # unstable: true
     envFile:
       - .env.prod
